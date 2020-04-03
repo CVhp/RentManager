@@ -51,6 +51,22 @@ une nouvelle fois tous les champs.
 
 ____ Fonctionalities _____________________________________________________________________________________________
 
+- Basique : Ajouter, lister, modifier, afficher les détails et supprimer un client, un véhicule ou une réservation.
+- Contraintes métiers :
+	* un client n'ayant pas 18ans ne peut pas être créé
+        * un client ayant une adresse mail déjà prise ne peut pas être créé
+        * une voiture ne peux pas être réservé 2 fois le même jour
+        * une voiture ne peux pas être réservé plus de 7 jours de suite par le même utilisateur
+        * une voiture ne peux pas être réservé 30 jours de suite sans pause 
+        * si un client ou un véhicule est supprimé, alors il faut supprimer les réservations associées
+        * une voiture doit avoir un modèle et un constructeur, son nombre de place doit être compris entre 2 et 9
+        
+- Validation des entrées :
+        * les entrées ne peuvent pas être vides
+        * le nom et le prénom d'un client doivent faire au moins 3 caractères
+        * la date de fin de réservation doit être supérieure à la date de début 
+        * un email doit contenir le sigle @ 
+        
 
-____ Author ________________________________________________________________________________________________________
+____ Author _______________________________________________________________________________________________________
 Cécile VANHELLEPUTTE - EPF - Majeure MIN - P2021
