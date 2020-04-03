@@ -26,12 +26,12 @@ ____ Technical Choices _________________________________________________________
 
 - Ajout de fonctions get() dans Client(), Vehicle(), Reservation()
 	* Client()
-getListVehicle(Client client) : retourne la liste de véhicules associés aux réservations du client en question
+		- getListVehicle(Client client) : retourne la liste de véhicules associés aux réservations du client en question
 	* Vehicle()
-getListClient(Vehicle vehicle) : retourne la liste de clients associés aux réservations du véhicule en question
+		- getListClient(Vehicle vehicle) : retourne la liste de clients associés aux réservations du véhicule en question
 	* Reservation()
-getVehicle() : retourne l'objet Vehicle associé à la reservation en question
-getClient() : retourne l'objet Client associé à la reservation en question 
+		- getVehicle() : retourne l'objet Vehicle associé à la reservation en question
+		- getClient() : retourne l'objet Client associé à la reservation en question 
 
 - Ajout de fichiers .jsp et Sevlets afin de permettre à l'utilisateur de modifier et d'afficher les détails
 	* Modifier
