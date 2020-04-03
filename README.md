@@ -18,7 +18,7 @@ ____ Deployment ________________________________________________________________
 	+ Java 1.8
 	+ JavaScript 1.0
 
-- Créer un serveur Tomcat v9.0 en localhost. 
+- Créer un serveur Tomcat v9.0 en localhost et l'associer au projet. 
 - Lancer le serveur avec Eclipse en faisant clic droit sur le "HomeServlet" puis choisir : Run as > Run on Server.
 
 ____ Technical Choices _____________________________________________________________________________________________
