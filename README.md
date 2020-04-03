@@ -2,7 +2,7 @@
 
 Créé le 03.04.2020 
 -------------------------------------------------- ProjetManager --------------------------------------------------
-//description of project
+Site Web permetant la gestion des clients, véhicules et réservations. 
 
 ____ Getting Started _______________________________________________________________________________________________
 
@@ -22,9 +22,16 @@ Créer un serveur Tomcat v9.0 en localhost.
 Le dossier WebContent sera utilisé quand le serveur sera lancé avec Eclipse.
 
 ____ Technical Choices _____________________________________________________________________________________________
--------- Ajout d'un package validator
+-------- Ajout d'un package validator contenant les méthodes de validation des inputs
 
 -------- Ajout de fonctions get() dans Client(), Vehicle(), Reservation()
+-------------- Client()
+getListVehicle(Client client) : retourne la liste de véhicules associés aux réservations du client en question
+-------------- Vehicle()
+getListClient(Vehicle vehicle) : retourne la liste de clients associés aux réservations du véhicule en question
+-------------- Reservation()
+getVehicle() : retourne l'objet Vehicle associé à la reservation en question
+getClient() : retourne l'objet Client associé à la reservation en question 
 
 -------- Ajout de fichiers .jsp et Sevlets afin de permettre à l'utilisateur de modifier et d'afficher les détails
 -------------- Modifier
@@ -42,7 +49,7 @@ une nouvelle fois tous les champs.
 
 -------------- Details
 
-
+____ Fonctionalities _____________________________________________________________________________________________
 
 
 ____ Author ________________________________________________________________________________________________________
