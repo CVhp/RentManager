@@ -54,7 +54,7 @@ ____ Fonctionalities ___________________________________________________________
 - Basique : Ajouter, lister, modifier, afficher les détails et supprimer un client, un véhicule ou une réservation.
 - Contraintes métiers :
 	* un client n'ayant pas 18ans ne peut pas être créé
-        * un client ayant une adresse mail déjà prise ne peut pas être créé
+	* un client ayant une adresse mail déjà prise ne peut pas être créé
         * une voiture ne peux pas être réservé 2 fois le même jour
         * une voiture ne peux pas être réservé plus de 7 jours de suite par le même utilisateur
         * une voiture ne peux pas être réservé 30 jours de suite sans pause 
