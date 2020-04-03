@@ -6,20 +6,20 @@ Site Web permetant la gestion des clients, véhicules et réservations.
 
 ____ Getting Started _______________________________________________________________________________________________
 
-Télécharger Eclipse du site suivant : https://www.eclipse.org/downloads/
-Dans "eclipseinstaller", choisir la version "Eclipse IDE for Entreprise Java Developers".
-Ce projet utilise Tomcat v9.0 (télécharger la version "Tomcat 9.0.33 Released" : http://tomcat.apache.org/). 
++ Télécharger Eclipse du site suivant : https://www.eclipse.org/downloads/
++ Dans "eclipseinstaller", choisir la version "Eclipse IDE for Entreprise Java Developers".
++ Ce projet utilise Tomcat v9.0 (télécharger la version "Tomcat 9.0.33 Released" : http://tomcat.apache.org/). 
 
 
 ____ Deployment ____________________________________________________________________________________________________
 
-Dans les properties du dossier de projet > Project Facets s'assurer d'avoir :
-	Dynamic Web Module 4.0
-	Java 1.8
-	JavaScript 1.0
+- Dans les properties du dossier de projet > Project Facets s'assurer d'avoir :
+	+ Dynamic Web Module 4.0
+	+ Java 1.8
+	+ JavaScript 1.0
 
-Créer un serveur Tomcat v9.0 en localhost. 
-Le dossier WebContent sera utilisé quand le serveur sera lancé avec Eclipse.
+- Créer un serveur Tomcat v9.0 en localhost. 
+- Lancer le serveur avec Eclipse en faisant clic droit sur le "HomeServlet" puis choisir : Run as > Run on Server.
 
 ____ Technical Choices _____________________________________________________________________________________________
 - Ajout d'un package validator contenant les méthodes de validation des inputs
@@ -40,7 +40,7 @@ getClient() : retourne l'objet Client associé à la reservation en question
 L'utilisateur a la possibilité de changer tous les paramètres SAUF l'ID de l'objet en question. Cela permet de 
 modifier uniquement les informations voulues tout en gardant le même ID et donc de ne pas perdre les 
 jonctions avec les autres objets.
-Exemple : si l'utilisateur du site décide de modifier l'adresse email d'un client, une fois la modification effectuée, 
+	Exemple : si l'utilisateur du site décide de modifier l'adresse email d'un client, une fois la modification effectuée, 
 ID de ce client restera inchangée et le client sera donc toujours lié à ses réservations. 
 
 		2) Pour les modifications d'un client et d'un véhicule, les informations avant modification seront affichées. 
@@ -48,6 +48,10 @@ Il est ainsi plus simple pour l'utilisateur de modifier seulement l'information 
 une nouvelle fois tous les champs.
 
 	* Details
+	
+		1) L'utilisateur peut avoir accès aux détails d'un client : afficher le nombre total de réservations et de véhicules liés au client choisi. Ainsi qu'au détails de ces réservations et aux détails de ces véhicules dans deux onglets séparés. 
+		2) L'utilisateur peut avoir accès aux détails d'un véhicule : afficher le nombre total de réservations et de clients liés au véhicule choisi. Ainsi qu'au détails de ces réservations et aux détails de ces clients dans deux onglets séparés.
+		3) L'utilisateur peut avoir accès aux détails d'une réservation : afficher les détails du véhicule et du client associé.
 
 ____ Fonctionalities _____________________________________________________________________________________________
 
