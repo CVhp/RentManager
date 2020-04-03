@@ -40,8 +40,6 @@ ____ Technical Choices _________________________________________________________
 L'utilisateur a la possibilité de changer tous les paramètres SAUF l'ID de l'objet en question. Cela permet de 
 modifier uniquement les informations voulues tout en gardant le même ID et donc de ne pas perdre les 
 jonctions avec les autres objets.
-	Exemple : si l'utilisateur du site décide de modifier l'adresse email d'un client, une fois la modification effectuée, 
-ID de ce client restera inchangée et le client sera donc toujours lié à ses réservations. 
 
 		2) Pour les modifications d'un client et d'un véhicule, les informations avant modification seront affichées. 
 Il est ainsi plus simple pour l'utilisateur de modifier seulement l'information voulue. Il n'a pas à renseigner 
