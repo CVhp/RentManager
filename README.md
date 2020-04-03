@@ -21,7 +21,7 @@ ____ Deployment ________________________________________________________________
 - Créer un serveur Tomcat v9.0 en localhost et l'associer au projet. 
 - Lancer le serveur avec Eclipse en faisant clic droit sur le "HomeServlet" puis choisir : Run as > Run on Server.
 
-____ Technical Choices _____________________________________________________________________________________________
+____ Technical Choices ____________________________________________________________________________________________
 - Ajout d'un package validator contenant les méthodes de validation des inputs
 
 - Ajout de fonctions get() dans Client(), Vehicle(), Reservation()
